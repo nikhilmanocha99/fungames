@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.js">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+	  
+    }
+	
+	.snake{
+      width: 230px;
+      height: 200px;
+    border:none;
+  }
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    background:inherit;
+    justify-content: center;
+    align-items: center;
+ -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006 );
+  }
+  a{  text-decoration:none ;
+  font-weight: 500;
+  margin-left: 5px;
+  padding: 4px 10px;
+  font-size: 35px;
+  color: #2196f3;  
+  text-transform: capitalize; 
+  display: block; 
+  font-weight: 500;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <section id="services" class="hide">
+             <div class="service_container">
+               <div class="service-top">
+                 <h1 style="color: aliceblue;font-size: 35px;padding-left: 10px;" class="section-title">arcade games</h1>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+					<div class="swiper-slide" ><a href="t_rex.html"> Jump<img class="snake" src="img/jump.png" alt=""> </a> </div>
+                    <div class="swiper-slide" ><a href="index.html">Ball Shooting<img class="snake" src="img/pokeball.jfif" alt=""> </a></div>
+					<div class="swiper-slide" >
+                    <a href="playgame.html">snake <img class="snake" src="img/download (1).jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide" >
+                    <a href="home.html">monster hunt <img class="snake" src="img/monster.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide" >
+                      <a href="ttt.html">TicTacToe <img class="snake" src="img/tic tac.png" alt=""></a>
+                    </div>
+					 <div class="swiper-slide"><a href="dice-roll.html">Dice Roll<img src="img/dice-3.png" alt=" " class="snake"></a> </div>
+                  
+                    
+    </div>
+	</div>
+            </div>
+            </section> 
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/packages/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: ,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+	 
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>

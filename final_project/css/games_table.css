@@ -1,0 +1,32 @@
+*{
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+	
+}
+body{
+	background:#000;
+	color:#999999;
+}
+h1{
+	font-size:44px;
+}
+.ch{
+	font-size:36px;
+}
+th{
+	font-size: 36px;
+	padding-bottom:0;
+	
+}
+td{
+	padding-top:0;
+}
+.snake{
+	width: 280px;
+	height: 280px;
+}
+.first,
+.second{
+	margin-left:55px;
+}
